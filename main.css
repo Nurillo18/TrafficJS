@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* transition: all 1s ease-in-out; */
+}
+
+body{
+    background-color: #cccc;
+    z-index: -50;
+    padding: 20px;
+    background-image: url("./imgs/imgRoa.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: calc(90%) calc(-1506%);;
+}
+.head {
+    width: 50px;
+    height: 150px;
+    background-color: #111;
+    border-radius: 12px;
+    display: flex;
+    margin-left: calc(80% - 242px);
+    margin-top: calc(12%);
+}
+.circles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.red {
+    width: 38px;
+    height: 45px;
+    border-radius: 106%;
+    background-color: #463B3F;
+    margin-bottom: 5px;
+}
+.yellow {
+    width: 38px;
+    height: 45px;
+    border-radius: 106%;
+    background-color:#463B3F;
+    margin-bottom: 5px;
+
+}
+.green {
+    width: 38px;
+    height: 45px;
+    border-radius: 106%;
+    background-color: #463B3F;
+
+}
+
+.iron-stone{
+    width: 17px;
+    height: 400px;
+    background-color: #111;
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(7%);
+    left: calc(78%);
+    z-index: -1;
+    border-radius:24px;
+}
+.iron-2{
+    width: 17px;
+    height: 300px;
+    background-color: #111;
+    position: absolute;
+    top: calc(30% + 26px);
+    left: calc(90% + 9px);
+    border-radius:24px;
+}
+
+/* .road{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    z-index: -9;
+    top: 0;
+    right: 20px;
+    background-color: #463B3F;
+} */
+
+
+.ared{
+    background-color: red;
+}
+.ayellow{
+    background-color: yellow;
+}
+.agreen{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
+.damas{
+    position: absolute;
+    width: 200px;
+    bottom: 40px;
+    right:20%;
+}
+
+.damasGM {
+    animation: animate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: -5;
+
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0);
+        /* transition: all 2s ease-in; */
+    }
+    100%{
+        transform: translateY(-400px) translateX(-230px);
+        width: 20px;
+        opacity: 0;
+    }
+}
+
+.zapa{
+    position: absolute;
+    width: 280px;
+    bottom: 20px;
+    right: 38%;
+
+}
+
+.zapas{
+    animation: zapa 3s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes zapa {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        width: 20px;
+        transform: translateY(-400px) translateX(30px);
+        opacity: 0;
+    }
+}
+
+.man{
+    position: absolute;
+    width: 100px;
+    bottom: 250px;
+    right: 50%;
+    opacity: 0;
+}
+
+.man2 {
+    opacity: 1;
+    animation: man 5s ease-in;
+    animation-iteration-count: 1;
+}
+
+@keyframes man {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
